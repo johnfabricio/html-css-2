@@ -1,14 +1,35 @@
 @charset "UTF-8";
 
-/*Versão para demais telas
-*/
+/*Para demais medias*/
 
-@media print { /*Impressora*/
-    
+@media screen and (min-width: 768px) and (max-width: 992px){ /*Tablet*/
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    img#iphone{display: none;}
+    img#tablet{display: block;}
+    img#print{display: none;}
+    img#pc{display: none;}
+    img#tv{display: none;}
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px){
+@media screen and (min-width: 992px) and (max-width:1200px) {/*Desktop*/
     body{
-        background-image: url(/exercicios/ex026/imagens/back-tablet.jpg);
+        background-image: url(../imagens/back-pc.jpg);
     }
+    img#iphone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: none;}
+    img#pc{display: block;}
+    img#tv{display: none;}
+}
+@media screen and (min-width: 1200px){/*Telas grandes*/
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    img#iphone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: none;}
+    img#pc{display: none;}
+    img#tv{display: block;}
 }
