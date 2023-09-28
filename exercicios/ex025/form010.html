@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Criando Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on" >
+
+        <p>
+            <label for="iano">Nascimento: </label>
+            <input type="number" name="ano" id="iano" min="1900" max="2023" 
+            oninput="calcidade">
+
+        </p>
+        
+        <p>
+            <label for="iidade">Sua idade: </label>
+            <output name="idade" id="iidade">0</output>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
