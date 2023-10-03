@@ -8,6 +8,7 @@
 }
 
 body, html{
+    background-color: rgb(190, 190, 190);
    
 }
 
@@ -19,7 +20,7 @@ header h1{
     text-align: center;
 }
 menu{
-    display: block;
+    display: none;
 }
 
 menu > ul{
@@ -41,11 +42,22 @@ menu>ul>li>a:hover{
     background-color: rgb(161, 161, 161);
 }
 
+span#burguer{
+    display: block;
+    background-color: rgb(36, 35, 35); 
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+span#burguer:hover{
+    background-color: rgb(161, 161, 161);
+    cursor: pointer;;
+}
 
 main{
     width: 90vw;
     margin: auto;
-    background-color: aqua;
+    background-color: white;
     margin-top: 10px;
     padding: 10px;
     border-radius: 10px;
